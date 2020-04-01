@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Express Dev Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h1>Dev Skills</h1>
+      <ul>
+          <% devSkills.forEach((dS, index) => { %>
+            <li>
+                <%= dS.devSkill %>
+                -
+                <%= dS.learned ? 'yes' : 'no' %>
+            </li>
+        <% }) %>
+      </ul>
+  </body>
+</html>
