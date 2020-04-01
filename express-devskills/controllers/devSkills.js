@@ -14,7 +14,12 @@ const show = (req, res) => {
     })
 }
 
+const newSkill = (req, res) => {
+    res.render('devSkills/new')
+}
+
 module.exports = {
     index,
-    show
+    show,
+    newSkill
 }
