@@ -1,0 +1,9 @@
+body {
+    font-family: 'Orator Std', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkkhaki;
+    color: white;
+}

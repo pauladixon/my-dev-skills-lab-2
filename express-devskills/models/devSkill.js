@@ -9,6 +9,12 @@ const getAll = () => {
     return devSkills
 }
 
+const getOne = (id) => {
+    return devSkills[id]
+}
+
+
 module.exports = {
-    getAll
+    getAll,
+    getOne
 }

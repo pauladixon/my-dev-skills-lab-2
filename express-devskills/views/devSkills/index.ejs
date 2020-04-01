@@ -4,13 +4,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-      <h1>Dev Skills</h1>
+      <h1>Dev Skills Learned as of <%= time %></h1>
       <ul>
           <% devSkills.forEach((dS, index) => { %>
             <li>
+              <a href='/devSkills/<%= index %>'>
                 <%= dS.devSkill %>
+              </a>
                 -
-                <%= dS.learned ? 'yes' : 'no' %>
+                <%= dS.learned ? 'yes' : 'not quite' %>
             </li>
         <% }) %>
       </ul>
