@@ -13,8 +13,16 @@ const getOne = (id) => {
     return devSkills[id]
 }
 
+const create = (devSkill) => {
+    devSkills.push(devSkill)
+}
 
+const deleteOne = (id) => {
+    devSkills.splice(id, 1)
+}
 module.exports = {
     getAll,
-    getOne
+    getOne, 
+    create, 
+    deleteOne
 }

@@ -8,6 +8,10 @@
       <ul>
           <% devSkills.forEach((dS, index) => { %>
             <li>
+              <form action="/devSkills/<%= index $>?_method=DELETE"
+                class="delete-form" method="POST">
+                <button type="submit">X</button>
+              </form>
               <a href='/devSkills/<%= index %>'>
                 <%= dS.devSkill %>
               </a>
@@ -16,5 +20,6 @@
             </li>
         <% }) %>
       </ul>
+      <a href="/devSkills/new">Add New Skill</a>
   </body>
 </html>
